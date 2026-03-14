@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study 02 | String cable comparison in utility scale projects</title>
+  <meta name="description" content="Utility-scale projelerde string kablo senaryolarının teknik karşılaştırması.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Mustafa Ünal</span>
+        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Menüyü aç</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <article class="container detail-page">
+      <section class="detail-hero card" data-reveal>
+        <p class="eyebrow">Case Study 02</p>
+        <div class="detail-case-meta">
+          <span class="detail-case-number">02</span>
+          <span class="detail-case-category">Electrical Design</span>
+        </div>
+        <h1>String cable comparison in utility scale projects</h1>
+        <p>
+          Farklı kablolama senaryolarının uzunluk, kayıp ve saha uygulanabilirliği açısından değerlendirilmesi.
+          Amaç, tasarım kararını sadece kablo metrajıyla değil, operasyonel etkilerle birlikte belirlemektir.
+        </p>
+        <div class="detail-cover">Cover Image Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>1. Problem</h2>
+        <p>
+          Projede inverter blok yerleşimi güncellendikçe string kablo yolları karmaşıklaştı ve toplam kablo
+          uzunluğunda kontrolsüz artış oluştu. Bunun sonucu olarak gerilim düşümü limitleri zorlanmaya başladı
+          ve saha montaj süresi uzama riski taşıdı.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>2. Context</h2>
+        <p>
+          Analiz, yaklaşık 118 MWp büyüklüğünde utility-scale bir saha için yapıldı. Farklı inverter dağılımı,
+          kablo kanal yerleşimi ve string grouping yaklaşımı içeren üç elektrik tasarım alternatifi karşılaştırıldı.
+          Hesaplamalarda aynı ekipman spesifikasyonu sabit tutuldu.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>3. Methodology</h2>
+        <ol class="ordered-list">
+          <li>Her senaryo için DC kablo routing katmanının CAD/GIS üzerinde çıkarılması.</li>
+          <li>String bazında kablo metrajı ve maksimum hat uzunluklarının hesaplanması.</li>
+          <li>Gerilim düşümü ve saha montaj karmaşıklığı metriklerinin birlikte puanlanması.</li>
+          <li>Teknik-maliyet dengesini gösteren karar tablosunun oluşturulması.</li>
+        </ol>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>4. Technical Analysis</h2>
+        <p>
+          Karşılaştırma sonucunda, en düşük toplam kablo uzunluğu tek başına optimal çözüm üretmedi. Bazı
+          senaryolarda metraj avantajı olsa da kanal yoğunluğu ve çapraz geçiş sayısı montaj riskini artırdı.
+          Bu nedenle değerlendirme, kayıp ve uygulanabilirlik metrikleriyle birlikte yapıldı.
+        </p>
+        <div class="visual-row">
+          <div class="detail-visual">Cable Routing Screenshot Placeholder</div>
+          <div class="detail-visual">Voltage Drop Chart Placeholder</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Senaryo</th>
+                <th>Toplam DC Kablo (km)</th>
+                <th>Maks. Voltage Drop</th>
+                <th>Montaj Karmaşıklığı</th>
+                <th>CAPEX İndeksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A</td>
+                <td>142.6</td>
+                <td>1.82%</td>
+                <td>Yüksek</td>
+                <td>1.00</td>
+              </tr>
+              <tr>
+                <td>B</td>
+                <td>147.9</td>
+                <td>1.44%</td>
+                <td>Orta</td>
+                <td>1.03</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>151.1</td>
+                <td>1.31%</td>
+                <td>Düşük</td>
+                <td>1.05</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>5. Key Findings</h2>
+        <ul class="list-clean">
+          <li>En kısa metraj senaryosu, montaj karmaşıklığı nedeniyle toplam saha süresinde avantaj üretmedi.</li>
+          <li>Daha dengeli routing yaklaşımı, voltage drop değerlerini güvenli aralığa çekti.</li>
+          <li>Kanal geçiş noktalarının sadeleştirilmesi bakım erişimini iyileştirdi.</li>
+          <li>Teknik kalite ve uygulama hızı açısından en dengeli sonuç Senaryo B'de elde edildi.</li>
+        </ul>
+        <div class="detail-visual">Comparison Image Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>6. Result</h2>
+        <p>
+          Sonuç olarak proje ekibi, saha uygulanabilirliği yüksek ve gerilim düşümü açısından emniyetli bir kablolama
+          kurgusunu seçti. Çalışma, elektrik tasarımında kararın yalnızca kablo uzunluğuna göre verilmesinin eksik
+          kaldığını; montaj, bakım ve kayıp parametrelerinin birlikte ele alınması gerektiğini gösterdi.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>7. Next Related Case Studies</h2>
+        <div class="related-grid">
+          <a class="card pressable" href="case-study-01.html">
+            <span class="case-number">Case 01</span>
+            <h3>Terrain optimization and cut-fill comparison</h3>
+            <p class="muted">Topoğrafyanın tasarım ve hafriyat etkisi.</p>
+          </a>
+          <a class="card pressable" href="case-study-03.html">
+            <span class="case-number">Case 03</span>
+            <h3>PVsyst report interpretation</h3>
+            <p class="muted">Enerji üretim raporlarını karar odaklı yorumlama.</p>
+          </a>
+        </div>
+        <a class="button pressable" href="case-studies.html">Back to Archive</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mustafa Ünal</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insights | Mustafa Ünal</title>
+  <meta name="description" content="Kısa teknik içgörüler, saha notları ve mühendislik odaklı yorumlar.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Mustafa Ünal</span>
+        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Menüyü aç</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-intro container" data-reveal>
+      <p class="eyebrow">Insights</p>
+      <h1>Kısa formatta teknik notlar ve proje içi öğrenimler.</h1>
+      <p>
+        Bu bölüm, uzun vaka formatına girmeyen fakat mühendislik karar kalitesi açısından kritik olan kısa içerikleri
+        bir araya getirir. Her içerik; problem-çıkarım-aksiyon üçlüsüyle yazılır.
+      </p>
+    </section>
+
+    <section class="section container" data-reveal>
+      <div class="insight-grid">
+        <article class="insight-card card pressable">
+          <p class="meta-line">Production Analysis · Tarih: YYYY-MM-DD</p>
+          <h3>PVsyst loss tree okunurken yapılan 5 kritik hata</h3>
+          <p>Loss tree'de oranları tek başına okumak yerine mevsimsel davranışla birlikte yorumlamanın pratik çerçevesi.</p>
+        </article>
+        <article class="insight-card card pressable">
+          <p class="meta-line">Terrain Analysis · Tarih: YYYY-MM-DD</p>
+          <h3>Erken fazda contour filtreleme neden tasarım kalitesini belirler?</h3>
+          <p>Arazi modelleme çözünürlüğünün yerleşim kararlarını nasıl etkilediğine dair kısa teknik değerlendirme.</p>
+        </article>
+        <article class="insight-card card pressable">
+          <p class="meta-line">Electrical Design · Tarih: YYYY-MM-DD</p>
+          <h3>String routing kararlarında sadece metraj odaklı yaklaşımın sınırları</h3>
+          <p>Kablo uzunluğu, montaj karmaşıklığı ve bakım erişimi dengesini birlikte ele alan kontrol listesi.</p>
+        </article>
+        <article class="insight-card card pressable">
+          <p class="meta-line">AI Workflows · Tarih: YYYY-MM-DD</p>
+          <h3>Teknik rapor üretiminde AI kullanımında doğrulama katmanı nasıl kurulur?</h3>
+          <p>AI ile hız kazanırken mühendislik doğruluğunu korumak için önerilen çok adımlı review akışı.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mustafa Ünal</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

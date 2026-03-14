@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study 01 | Terrain optimization and cut-fill comparison</title>
+  <meta name="description" content="Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisine odaklanan vaka çalışması.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Mustafa Ünal</span>
+        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Menüyü aç</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <article class="container detail-page">
+      <section class="detail-hero card" data-reveal>
+        <p class="eyebrow">Case Study 01</p>
+        <div class="detail-case-meta">
+          <span class="detail-case-number">01</span>
+          <span class="detail-case-category">Terrain Analysis</span>
+        </div>
+        <h1>Terrain optimization and cut-fill comparison</h1>
+        <p>
+          Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisini inceleyen teknik çalışma.
+          Çalışma, yerleşim verimliliği ile saha uygulanabilirliği arasındaki dengeyi sayısal olarak değerlendirir.
+        </p>
+        <div class="detail-cover">Cover Image Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>1. Problem</h2>
+        <p>
+          Proje sahasında topoğrafyanın homojen olmaması, sabit tilt yerleşim düzeninde yüksek kazı ve dolgu ihtiyacı
+          oluşturuyordu. Bu durum hem inşaat maliyetini artırıyor hem de yerleşim yoğunluğunu olumsuz etkiliyordu.
+          Hedef, enerji kapasitesinden minimum ödün vererek daha dengeli bir hafriyat profili üretmekti.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>2. Context</h2>
+        <p>
+          Çalışma 65 MWp ölçeğinde, değişken eğime sahip bir saha üzerinde yürütüldü. Mevcut kontur verisi,
+          drone tabanlı yüzey modeli ve ilk yerleşim paftaları referans alındı. Saha erişim yolları, drenaj
+          hatları ve yapı yasak alanları analizde sabit kısıt olarak tutuldu.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>3. Methodology</h2>
+        <p>Analiz süreci, üç alternatif senaryo üzerinden karşılaştırmalı olarak yürütüldü:</p>
+        <ol class="ordered-list">
+          <li>Referans yerleşim üzerinden mevcut cut/fill hacimlerinin çıkarılması.</li>
+          <li>Eğim limitlerinin revize edildiği optimize yerleşim senaryosunun modellenmesi.</li>
+          <li>Hafriyat dengesi, kapasite kaybı ve erişim etkisinin tek tabloda kıyaslanması.</li>
+        </ol>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>4. Technical Analysis</h2>
+        <p>
+          Senaryolar arası temel fark, yüksek eğimli adalarda sıra yönünün revize edilmesi ve bazı bloklarda
+          satır aralığı optimizasyonu yapılmasıyla oluştu. Bu revizyonlar toplam panel adedini sınırlı etkilerken
+          cut/fill dengesinde belirgin iyileşme sağladı.
+        </p>
+        <div class="visual-row">
+          <div class="detail-visual">Topography Screenshot Placeholder</div>
+          <div class="detail-visual">Cut/Fill Graph Placeholder</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Senaryo</th>
+                <th>Kesit (m3)</th>
+                <th>Dolgu (m3)</th>
+                <th>Kapasite Etkisi</th>
+                <th>Yorum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Referans</td>
+                <td>42,300</td>
+                <td>39,900</td>
+                <td>0.00%</td>
+                <td>Yüksek hafriyat ihtiyacı</td>
+              </tr>
+              <tr>
+                <td>Optimizasyon A</td>
+                <td>31,850</td>
+                <td>30,940</td>
+                <td>-0.45%</td>
+                <td>Daha dengeli dağılım</td>
+              </tr>
+              <tr>
+                <td>Optimizasyon B</td>
+                <td>29,120</td>
+                <td>28,540</td>
+                <td>-0.92%</td>
+                <td>En düşük hafriyat, hafif kapasite kaybı</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>5. Key Findings</h2>
+        <ul class="list-clean">
+          <li>Eğim sınırlarının lokal revizyonu, toplam hafriyat hacminde yaklaşık %27 azalma sağladı.</li>
+          <li>Sıra yönü değişiklikleri belirli adalarda erişim yol uzunluğunu düşürdü.</li>
+          <li>Kapasite kaybı düşük seviyede tutulurken saha uygulanabilirliği belirgin biçimde iyileşti.</li>
+          <li>En iyi teknik denge, maliyet ve enerji çıktısının birlikte değerlendirildiği hibrit senaryoda oluştu.</li>
+        </ul>
+        <div class="detail-visual">Comparison Image Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>6. Result</h2>
+        <p>
+          Çalışma sonunda, proje ekibi için uygulanabilirliği yüksek bir optimize yerleşim önerisi üretildi.
+          Nihai senaryo; hafriyat azaltımı, erişim kolaylığı ve kapasite sürekliliği açısından dengeli bir sonuç
+          sundu. Bu çıktı, erken faz tasarım kararlarının inşaat maliyeti üzerindeki etkisini sayısal olarak
+          görünür hale getirdi.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>7. Next Related Case Studies</h2>
+        <div class="related-grid">
+          <a class="card pressable" href="case-study-02.html">
+            <span class="case-number">Case 02</span>
+            <h3>String cable comparison in utility scale projects</h3>
+            <p class="muted">Kablolama senaryoları ve voltage drop etkisi.</p>
+          </a>
+          <a class="card pressable" href="case-study-03.html">
+            <span class="case-number">Case 03</span>
+            <h3>PVsyst report interpretation</h3>
+            <p class="muted">Üretim raporlarının teknik risk odaklı okunması.</p>
+          </a>
+        </div>
+        <a class="button pressable" href="case-studies.html">Back to Archive</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mustafa Ünal</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

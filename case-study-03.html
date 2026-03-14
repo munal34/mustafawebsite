@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Study 03 | PVsyst report interpretation</title>
+  <meta name="description" content="PVsyst üretim raporlarının teknik risk ve tasarım kararları açısından yorumlanması.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Mustafa Ünal</span>
+        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span class="sr-only">Menüyü aç</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <article class="container detail-page">
+      <section class="detail-hero card" data-reveal>
+        <p class="eyebrow">Case Study 03</p>
+        <div class="detail-case-meta">
+          <span class="detail-case-number">03</span>
+          <span class="detail-case-category">Production Analysis</span>
+        </div>
+        <h1>PVsyst report interpretation</h1>
+        <p>
+          Enerji üretim raporlarının teknik risk ve tasarım kararları açısından yorumlanması.
+          Bu çalışma, kayıp ağacındaki verilerin hangi tasarım aksiyonlarına dönüştürülebileceğini ele alır.
+        </p>
+        <div class="detail-cover">Cover Image Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>1. Problem</h2>
+        <p>
+          Proje ekiplerinde PVsyst raporları çoğu zaman yalnızca yıllık üretim değeri üzerinden değerlendiriliyor.
+          Bu yaklaşım, kayıp dağılımının altında yatan teknik riskleri gözden kaçırabiliyor ve tasarım iyileştirme
+          fırsatlarını sınırlayabiliyor.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>2. Context</h2>
+        <p>
+          İncelenen model, 12 aylık meteorolojik veri seti ile oluşturulmuş 95 MWp büyüklüğünde bir referans projeye
+          ait. Rapor, farklı albedo varsayımları, sıcaklık katsayıları ve inverter clipping davranışlarıyla birlikte
+          değerlendirilerek teknik hassasiyet analizi yapıldı.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>3. Methodology</h2>
+        <ol class="ordered-list">
+          <li>Loss tree kırılımlarının enerji etkisi yüzdesel olarak ayrıştırıldı.</li>
+          <li>Yüksek etkiye sahip kayıp kalemleri için tasarım kaynaklı kök neden analizi yapıldı.</li>
+          <li>Alternatif parametre setleri ile senaryo duyarlılık testi yürütüldü.</li>
+          <li>Bulgu seti, uygulanabilir tasarım aksiyonlarına dönüştürüldü.</li>
+        </ol>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>4. Technical Analysis</h2>
+        <p>
+          Analizde en yüksek etki, termal kayıplar ve mismatch davranışında gözlendi. Özellikle sıcak saatlerde
+          inverter yüklenmesi ile dizi davranışı arasındaki uyumsuzluk, aylık üretim profilinde dalgalanmaya neden oldu.
+          Kayıp dağılımı sadece toplam yüzde ile değil, mevsimsel zamanlamasıyla birlikte okundu.
+        </p>
+        <div class="visual-row">
+          <div class="detail-visual">Loss Tree Screenshot Placeholder</div>
+          <div class="detail-visual">Monthly Yield Graph Placeholder</div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Kayıp Kalemi</th>
+                <th>Referans</th>
+                <th>Revize Senaryo</th>
+                <th>Etki</th>
+                <th>Not</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Thermal Loss</td>
+                <td>8.9%</td>
+                <td>8.1%</td>
+                <td>-0.8 puan</td>
+                <td>String grouping revizyonu</td>
+              </tr>
+              <tr>
+                <td>Mismatching</td>
+                <td>2.6%</td>
+                <td>2.1%</td>
+                <td>-0.5 puan</td>
+                <td>Dizi dağılımı iyileştirmesi</td>
+              </tr>
+              <tr>
+                <td>Clipping</td>
+                <td>1.8%</td>
+                <td>1.5%</td>
+                <td>-0.3 puan</td>
+                <td>DC/AC oran ince ayarı</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>5. Key Findings</h2>
+        <ul class="list-clean">
+          <li>Loss tree yorumunda en yüksek değerli kayıplar, doğrudan tasarım aksiyonuna dönüştürülebildi.</li>
+          <li>Mevsimsel profil analizi, yıllık toplamın gizlediği performans kırılmalarını görünür kıldı.</li>
+          <li>Parametre duyarlılığı sayesinde hangi varsayımların proje riskini artırdığı netleşti.</li>
+          <li>Raporun karar değeri, yalnızca sonucu değil neden-sonuç ilişkisini okuyunca yükseldi.</li>
+        </ul>
+        <div class="detail-visual">Comparative Report View Placeholder</div>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>6. Result</h2>
+        <p>
+          Çalışma, PVsyst raporlarının pasif bir çıktıdan aktif bir karar aracına dönüştürülebileceğini gösterdi.
+          Elde edilen bulgular tasarım ekibine ölçülebilir iyileştirme alanları sundu ve sonraki proje fazlarında
+          rapor okuma standardının güncellenmesine temel oluşturdu.
+        </p>
+      </section>
+
+      <section class="detail-section" data-reveal>
+        <h2>7. Next Related Case Studies</h2>
+        <div class="related-grid">
+          <a class="card pressable" href="case-study-01.html">
+            <span class="case-number">Case 01</span>
+            <h3>Terrain optimization and cut-fill comparison</h3>
+            <p class="muted">Yerleşim kararlarının topoğrafya ile etkileşimi.</p>
+          </a>
+          <a class="card pressable" href="case-study-02.html">
+            <span class="case-number">Case 02</span>
+            <h3>String cable comparison in utility scale projects</h3>
+            <p class="muted">Kablo metrajı, kayıp ve uygulama dengesinin analizi.</p>
+          </a>
+        </div>
+        <a class="button pressable" href="case-studies.html">Back to Archive</a>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mustafa Ünal</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="insights.html">Insights</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
