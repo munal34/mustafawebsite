@@ -4,94 +4,90 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Case Studies | Mustafa Ünal</title>
-  <meta name="description" content="Solar mühendislik vaka çalışmalarının numaralandırılmış arşiv sayfası.">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="description" content="Solar mühendislik case studies ana sayfası.">
+  <link rel="stylesheet" href="style.css?v=20260315k">
+  <script src="script.js?v=20260315e" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">Mustafa Ünal</span>
-        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-name">Mustafa Ünal</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span class="sr-only">Menüyü aç</span>
       </button>
-      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-        <a href="about.html">About</a>
+      <nav class="site-nav" id="site-navigation" aria-label="Ana menü">
+        <a href="hakkimda.html">Hakkımda</a>
         <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="teknik-kutuphane.html">Teknik Kütüphane</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-shell">
+  <main class="page">
     <section class="page-intro container" data-reveal>
       <p class="eyebrow">Case Studies</p>
-      <h1>Solar mühendislik kararlarını numaralandırılmış vaka yapısında sunan teknik arşiv.</h1>
-      <p>
-        Her çalışma aynı bilgi mimarisiyle yayınlanır: problem, bağlam, yöntem, teknik analiz, bulgular ve sonuç.
-        Bu format sayesinde farklı projeler arasında teknik kıyaslama kolaylaşır.
-      </p>
+      <h1>Teknik case study arşivi</h1>
+      <p>Mevcut çalışmaları yalın bir listede inceleyebilirsiniz.</p>
     </section>
 
-    <section class="section container" data-reveal>
-      <div class="section-head">
-        <h2>Case Archive</h2>
-        <p>Numaralandırılmış vaka listesi.</p>
-      </div>
-      <ol class="archive-grid">
-        <li>
-          <a class="case-card card pressable" href="case-study-01.html">
-            <div class="case-cover">
-              <span class="case-cover-label">Image Placeholder</span>
-            </div>
-            <div class="case-number-line">
-              <span class="case-number">01</span>
-              <span class="case-category">Terrain Analysis</span>
-            </div>
+    <section class="section container" id="case-grid" data-reveal>
+      <div class="case-stack">
+        <a class="case-card card case-link pressable" id="case-01" href="case-study-01.html" aria-label="Case 01 teknik içerik sayfasını aç">
+          <div class="cover contain">
+            <img src="assets/cases/case-01-hafriyat/images/adaptterrain.png" alt="Case 01 görseli" loading="lazy">
+            <span class="cover-label">Case 01</span>
+          </div>
+          <div class="case-card-body">
+            <p class="meta">Terrain Analysis</p>
             <h3>Terrain optimization and cut-fill comparison</h3>
             <p class="case-summary">Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisini inceleyen teknik çalışma.</p>
-            <p class="meta-line">Cut / Fill · Contour · Layout impact</p>
-            <span class="inline-link">View Case</span>
-          </a>
-        </li>
-        <li>
-          <a class="case-card card pressable" href="case-study-02.html">
-            <div class="case-cover">
-              <span class="case-cover-label">Image Placeholder</span>
-            </div>
-            <div class="case-number-line">
-              <span class="case-number">02</span>
-              <span class="case-category">Electrical Design</span>
-            </div>
+            <p class="meta">Cut / Fill · Contour · Layout impact</p>
+          </div>
+        </a>
+
+        <a class="case-card card case-link pressable" id="case-02" href="case-study-02.html" aria-label="Case 02 teknik içerik sayfasını aç">
+          <div class="cover contain">
+            <img src="assets/cases/case-02-kablolama/images/cablelenghts.png" alt="Case 02 görseli" loading="lazy">
+            <span class="cover-label">Case 02</span>
+          </div>
+          <div class="case-card-body">
+            <p class="meta">Electrical Design</p>
             <h3>String cable comparison in utility scale projects</h3>
             <p class="case-summary">Farklı kablolama senaryolarının uzunluk, kayıp ve saha uygulanabilirliği açısından değerlendirilmesi.</p>
-            <p class="meta-line">Cable routing · Voltage drop</p>
-            <span class="inline-link">View Case</span>
-          </a>
-        </li>
-        <li>
-          <a class="case-card card pressable" href="case-study-03.html">
-            <div class="case-cover">
-              <span class="case-cover-label">Image Placeholder</span>
-            </div>
-            <div class="case-number-line">
-              <span class="case-number">03</span>
-              <span class="case-category">Production Analysis</span>
-            </div>
+            <p class="meta">Cable routing · Voltage drop</p>
+          </div>
+        </a>
+
+        <a class="case-card card case-link pressable" id="case-03" href="case-study-03.html" aria-label="Case 03 teknik içerik sayfasını aç">
+          <div class="cover contain">
+            <img src="assets/cases/case-03-golge-kablolama-optimizasyon/images/1-2.png" alt="Case 03 görseli" loading="lazy">
+            <span class="cover-label">Case 03</span>
+          </div>
+          <div class="case-card-body">
+            <p class="meta">Production Analysis</p>
             <h3>PVsyst report interpretation</h3>
             <p class="case-summary">Enerji üretim raporlarının teknik risk ve tasarım kararları açısından yorumlanması.</p>
-            <p class="meta-line">Loss tree · Yield analysis</p>
-            <span class="inline-link">View Case</span>
-          </a>
-        </li>
-      </ol>
+            <p class="meta">Loss tree · Yield analysis</p>
+          </div>
+        </a>
+
+        <a class="case-card card case-link pressable" id="case-04" href="case-study-04.html" aria-label="Case 04 teknik içerik sayfasını aç">
+          <div class="cover">
+            <img src="assets/cases/case-04-depolama-sistemleri/images/tracker.jpg" alt="Case 04 görseli" loading="lazy">
+            <span class="cover-label">Case 04</span>
+          </div>
+          <div class="case-card-body">
+            <p class="meta">Storage Analysis</p>
+            <h3>BESS peak shaving ve clipping davranışı</h3>
+            <p class="case-summary">Depolama stratejisinin üretim profilinde yarattığı teknik etkileri ele alan karşılaştırmalı çalışma.</p>
+            <p class="meta">BESS · Peak shaving · Clipping</p>
+          </div>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -99,12 +95,17 @@
     <div class="container footer-inner">
       <p>© <span id="year"></span> Mustafa Ünal</p>
       <div class="footer-links">
-        <a href="about.html">About</a>
+        <a href="hakkimda.html">Hakkımda</a>
         <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="teknik-kutuphane.html">Teknik Kütüphane</a>
       </div>
     </div>
   </footer>
 </body>
 </html>
+
+
+
+
+

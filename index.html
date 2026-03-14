@@ -3,164 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mustafa Ünal | Solar Engineering Knowledge Platform</title>
-  <meta name="description" content="Mustafa Ünal tarafından hazırlanan solar mühendislik vaka çalışmaları, teknik içgörüler ve AI destekli iş akışları platformu.">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>Mustafa Ünal | Solar Mühendislik Platformu</title>
+  <meta name="description" content="Mustafa Ünal teknik içerik platformu ana sayfa.">
+  <link rel="stylesheet" href="style.css?v=20260315j">
+  <script src="script.js?v=20260315e" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">Mustafa Ünal</span>
-        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+<body class="landing-gif-page">
+  <main class="landing-screen page" data-reveal>
+    <div class="landing-bg" aria-hidden="true">
+      <img src="assets/ui/landing-rv01.gif" alt="">
+    </div>
+
+    <div class="landing-overlay"></div>
+
+    <header class="landing-header">
+      <a class="landing-brand" href="index.html">Mustafa Ünal</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="landing-navigation">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span class="sr-only">Menüyü aç</span>
       </button>
-      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-        <a href="about.html">About</a>
+      <nav class="landing-nav site-nav" id="landing-navigation" aria-label="Ana menü">
+        <a href="hakkimda.html">Hakkımda</a>
         <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="teknik-kutuphane.html">Teknik Kütüphane</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="page-shell">
-    <section class="hero container" data-reveal>
-      <p class="eyebrow">Technical Archive</p>
-      <h1>Solar mühendisliği kararlarını vaka bazlı, okunabilir ve karşılaştırılabilir bir yapıda paylaşıyorum.</h1>
-      <p class="hero-text">
-        Bu platform, saha tasarımından üretim analizine kadar uzanan mühendislik süreçlerini net bir teknik dil ile
-        dokümante eder. Amaç; proje çıktılarının arkasındaki varsayımları, yöntemleri ve sonuçları açık şekilde sunmaktır.
+    <section class="landing-copy" aria-label="Karşılama">
+      <p class="landing-kicker">Solar Engineering Knowledge Base</p>
+      <h1>Case study, teknik not ve rapor arşivine doğrudan erişim.</h1>
+      <p>
+        Güneş enerjisi projelerinde kullanılan analiz yaklaşımı, yöntem dokümantasyonu
+        ve teknik çıktılar tek bir sade platformda düzenli olarak yayınlanır.
       </p>
-    </section>
-
-    <section class="section container" data-reveal>
-      <div class="section-head">
-        <h2>Platform Navigation</h2>
-        <p>Siteyi dört temel bölüm üzerinden gezebilirsiniz.</p>
-      </div>
-      <div class="gateway-grid">
-        <a class="gateway-card card pressable" href="about.html">
-          <span class="gateway-number">01</span>
-          <h3>About</h3>
-          <p>Mühendislik yaklaşımı, uzmanlık odağı ve bu platformun arka planı.</p>
-        </a>
-        <a class="gateway-card card pressable" href="case-studies.html">
-          <span class="gateway-number">02</span>
-          <h3>Case Studies</h3>
-          <p>Sahadan gelen teknik çalışmalar, karar noktaları ve ölçülebilir çıktıların arşivi.</p>
-        </a>
-        <a class="gateway-card card pressable" href="insights.html">
-          <span class="gateway-number">03</span>
-          <h3>Insights</h3>
-          <p>Kısa teknik notlar, proje içi öğrenimler ve yorum odaklı içerikler.</p>
-        </a>
-        <a class="gateway-card card pressable" href="contact.html">
-          <span class="gateway-number">04</span>
-          <h3>Contact</h3>
-          <p>İş birliği, teknik danışmanlık ve içerik üretimi için iletişim kanalları.</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section container" data-reveal>
-      <div class="section-head">
-        <h2>Featured Case Studies</h2>
-        <p>Öne çıkan üç çalışma, farklı mühendislik karar katmanlarını temsil eder.</p>
-      </div>
-      <div class="case-grid">
-        <a class="case-card card pressable" href="case-study-01.html">
-          <div class="case-cover">
-            <span class="case-cover-label">Cover Placeholder</span>
-          </div>
-          <div class="case-number-line">
-            <span class="case-number">Case 01</span>
-            <span class="case-category">Terrain Analysis</span>
-          </div>
-          <h3>Terrain optimization and cut-fill comparison</h3>
-          <p class="case-summary">Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisini inceleyen teknik çalışma.</p>
-          <p class="meta-line">Cut / Fill · Contour · Layout impact</p>
-        </a>
-
-        <a class="case-card card pressable" href="case-study-02.html">
-          <div class="case-cover">
-            <span class="case-cover-label">Cover Placeholder</span>
-          </div>
-          <div class="case-number-line">
-            <span class="case-number">Case 02</span>
-            <span class="case-category">Electrical Design</span>
-          </div>
-          <h3>String cable comparison in utility scale projects</h3>
-          <p class="case-summary">Farklı kablolama senaryolarının uzunluk, kayıp ve saha uygulanabilirliği açısından değerlendirilmesi.</p>
-          <p class="meta-line">Cable routing · Voltage drop</p>
-        </a>
-
-        <a class="case-card card pressable" href="case-study-03.html">
-          <div class="case-cover">
-            <span class="case-cover-label">Cover Placeholder</span>
-          </div>
-          <div class="case-number-line">
-            <span class="case-number">Case 03</span>
-            <span class="case-category">Production Analysis</span>
-          </div>
-          <h3>PVsyst report interpretation</h3>
-          <p class="case-summary">Enerji üretim raporlarının teknik risk ve tasarım kararları açısından yorumlanması.</p>
-          <p class="meta-line">Loss tree · Yield analysis</p>
-        </a>
-      </div>
-    </section>
-
-    <section class="section container" data-reveal>
-      <div class="section-head">
-        <h2>Expertise Areas</h2>
-        <p>Çalışmaların beslendiği dört ana uzmanlık ekseni.</p>
-      </div>
-      <div class="expertise-grid">
-        <article class="expertise-card card">
-          <h3>Solar Project Design</h3>
-          <p>Utility-scale proje yerleşimi, arazi kısıtları ve saha uygulanabilirliğini birlikte ele alan tasarım süreçleri.</p>
-        </article>
-        <article class="expertise-card card">
-          <h3>Technical Analysis</h3>
-          <p>Karşılaştırmalı senaryo analizi, kayıp değerlendirmesi ve karar kalitesini artıran sayısal inceleme çerçevesi.</p>
-        </article>
-        <article class="expertise-card card">
-          <h3>AI Engineering Workflows</h3>
-          <p>Tekrarlayan mühendislik görevlerini hızlandıran, doğrulanabilir ve belgelenebilir AI destekli üretim akışları.</p>
-        </article>
-        <article class="expertise-card card">
-          <h3>Technical Communication</h3>
-          <p>Karmaşık teknik bulguları paydaşlar için sade, izlenebilir ve proje kararlarına bağlanan içerik formatları.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section container" data-reveal>
-      <div class="cta-panel">
-        <p class="eyebrow">Archive Access</p>
-        <h2>Vaka çalışmalarını teknik detaylarıyla inceleyin.</h2>
-        <p>Her çalışma; problem tanımı, yöntem, analiz ve sonuç bölümleriyle standart bir formatta yayınlanır.</p>
-        <a class="button pressable" href="case-studies.html">Case Study Archive</a>
+      <div class="landing-actions">
+        <a class="button pressable" href="case-studies.html">Case Study'lere Git</a>
+        <a class="button ghost pressable" href="teknik-kutuphane.html">PDF Kütüphanesi</a>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Mustafa Ünal</p>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
+
+
+
+
+

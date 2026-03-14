@@ -3,174 +3,111 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Case Study 01 | Terrain optimization and cut-fill comparison</title>
-  <meta name="description" content="Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisine odaklanan vaka çalışması.">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <title>Case 01 | Terrain optimization and cut-fill comparison</title>
+  <meta name="description" content="Case 01 teknik içerik sayfası.">
+  <link rel="stylesheet" href="style.css?v=20260315k">
+  <script src="script.js?v=20260315e" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">Mustafa Ünal</span>
-        <span class="brand-meta">Solar Engineering Knowledge Platform</span>
-      </a>
+      <a class="brand" href="index.html"><span class="brand-name">Mustafa Ünal</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span class="sr-only">Menüyü aç</span>
       </button>
-      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
-        <a href="about.html">About</a>
+      <nav class="site-nav" id="site-navigation" aria-label="Ana menü">
+        <a href="hakkimda.html">Hakkımda</a>
         <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="teknik-kutuphane.html">Teknik Kütüphane</a>
       </nav>
     </div>
   </header>
 
-  <main class="page-shell">
-    <article class="container detail-page">
-      <section class="detail-hero card" data-reveal>
-        <p class="eyebrow">Case Study 01</p>
-        <div class="detail-case-meta">
-          <span class="detail-case-number">01</span>
-          <span class="detail-case-category">Terrain Analysis</span>
-        </div>
-        <h1>Terrain optimization and cut-fill comparison</h1>
-        <p>
-          Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisini inceleyen teknik çalışma.
-          Çalışma, yerleşim verimliliği ile saha uygulanabilirliği arasındaki dengeyi sayısal olarak değerlendirir.
-        </p>
-        <div class="detail-cover">Cover Image Placeholder</div>
-      </section>
+  <main class="page">
+    <div class="container detail-layout" data-reveal>
+      <article class="detail-main">
+        <section class="detail-hero">
+          <p class="eyebrow">Case 01 · Terrain Analysis</p>
+          <h1>Terrain optimization and cut-fill comparison</h1>
+          <p>Arazi eğim analizi ve hafriyat senaryolarının tasarım üzerindeki etkisini inceleyen teknik çalışma.</p>
+          <div class="cover large contain" style="margin-top:1rem;">
+            <img src="assets/cases/case-01-hafriyat/images/adaptterrain.png" alt="Case 01 kapak görseli" loading="lazy">
+          </div>
+        </section>
 
-      <section class="detail-section" data-reveal>
-        <h2>1. Problem</h2>
-        <p>
-          Proje sahasında topoğrafyanın homojen olmaması, sabit tilt yerleşim düzeninde yüksek kazı ve dolgu ihtiyacı
-          oluşturuyordu. Bu durum hem inşaat maliyetini artırıyor hem de yerleşim yoğunluğunu olumsuz etkiliyordu.
-          Hedef, enerji kapasitesinden minimum ödün vererek daha dengeli bir hafriyat profili üretmekti.
-        </p>
-      </section>
+        <section class="detail-section">
+          <h2>Problem Tanımı</h2>
+          <p>Bu çalışmada eğimli ve sert zeminli bir sahada, kazı-dolgu hacminin taşıyıcı sistem seçimine ve saha düzenine etkisi değerlendirilmiştir. Hedef; teknik uygulanabilirliği koruyarak hafriyat yükünü azaltmaktır.</p>
+        </section>
 
-      <section class="detail-section" data-reveal>
-        <h2>2. Context</h2>
-        <p>
-          Çalışma 65 MWp ölçeğinde, değişken eğime sahip bir saha üzerinde yürütüldü. Mevcut kontur verisi,
-          drone tabanlı yüzey modeli ve ilk yerleşim paftaları referans alındı. Saha erişim yolları, drenaj
-          hatları ve yapı yasak alanları analizde sabit kısıt olarak tutuldu.
-        </p>
-      </section>
+        <section class="detail-section">
+          <h2>Proje Bağlamı</h2>
+          <p>Analiz kapsamında aynı saha sınırları korunmuş, yalnızca zemin uyarlama yaklaşımı değiştirilmiştir. Kıyaslama, klasik layout yaklaşımı ile terrain adaptasyonlu yaklaşım arasında yapılmıştır.</p>
+        </section>
 
-      <section class="detail-section" data-reveal>
-        <h2>3. Methodology</h2>
-        <p>Analiz süreci, üç alternatif senaryo üzerinden karşılaştırmalı olarak yürütüldü:</p>
-        <ol class="ordered-list">
-          <li>Referans yerleşim üzerinden mevcut cut/fill hacimlerinin çıkarılması.</li>
-          <li>Eğim limitlerinin revize edildiği optimize yerleşim senaryosunun modellenmesi.</li>
-          <li>Hafriyat dengesi, kapasite kaybı ve erişim etkisinin tek tabloda kıyaslanması.</li>
-        </ol>
-      </section>
+        <section class="detail-section">
+          <h2>Kullanılan Yöntem</h2>
+          <p>Varsayımlar doğrultusunda eğim sınıflaması, contour bazlı kesit değerlendirmesi ve pile boyu etkisi bir arada ele alınmıştır. Kesitler üzerinden kazı-dolgu dağılımı karşılaştırılmıştır.</p>
+        </section>
 
-      <section class="detail-section" data-reveal>
-        <h2>4. Technical Analysis</h2>
-        <p>
-          Senaryolar arası temel fark, yüksek eğimli adalarda sıra yönünün revize edilmesi ve bazı bloklarda
-          satır aralığı optimizasyonu yapılmasıyla oluştu. Bu revizyonlar toplam panel adedini sınırlı etkilerken
-          cut/fill dengesinde belirgin iyileşme sağladı.
-        </p>
-        <div class="visual-row">
-          <div class="detail-visual">Topography Screenshot Placeholder</div>
-          <div class="detail-visual">Cut/Fill Graph Placeholder</div>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Senaryo</th>
-                <th>Kesit (m3)</th>
-                <th>Dolgu (m3)</th>
-                <th>Kapasite Etkisi</th>
-                <th>Yorum</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Referans</td>
-                <td>42,300</td>
-                <td>39,900</td>
-                <td>0.00%</td>
-                <td>Yüksek hafriyat ihtiyacı</td>
-              </tr>
-              <tr>
-                <td>Optimizasyon A</td>
-                <td>31,850</td>
-                <td>30,940</td>
-                <td>-0.45%</td>
-                <td>Daha dengeli dağılım</td>
-              </tr>
-              <tr>
-                <td>Optimizasyon B</td>
-                <td>29,120</td>
-                <td>28,540</td>
-                <td>-0.92%</td>
-                <td>En düşük hafriyat, hafif kapasite kaybı</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <section class="detail-section">
+          <h2>Teknik Analiz</h2>
+          <div class="visual-row">
+            <div class="visual contain"><img src="assets/cases/case-01-hafriyat/images/beforeafterlevelingkesit.png" alt="Kesit karşılaştırması" loading="lazy"></div>
+            <div class="visual contain"><img src="assets/cases/case-01-hafriyat/images/pileanalysis.png" alt="Pile analizi" loading="lazy"></div>
+          </div>
+          <p>Elde edilen bulgular, terrain adaptasyonu sonrası saha içinde yük dağılımının dengelendiğini ve kritik bölgelerdeki hafriyat ihtiyacının azaldığını göstermiştir.</p>
+        </section>
 
-      <section class="detail-section" data-reveal>
-        <h2>5. Key Findings</h2>
-        <ul class="list-clean">
-          <li>Eğim sınırlarının lokal revizyonu, toplam hafriyat hacminde yaklaşık %27 azalma sağladı.</li>
-          <li>Sıra yönü değişiklikleri belirli adalarda erişim yol uzunluğunu düşürdü.</li>
-          <li>Kapasite kaybı düşük seviyede tutulurken saha uygulanabilirliği belirgin biçimde iyileşti.</li>
-          <li>En iyi teknik denge, maliyet ve enerji çıktısının birlikte değerlendirildiği hibrit senaryoda oluştu.</li>
+        <section class="detail-section">
+          <h2>Bulgular</h2>
+          <ul class="clean-list">
+            <li>Cut-fill dengesinde daha kontrollü dağılım elde edildi.</li>
+            <li>Yüksek eğim bölgelerinde taşıyıcı sistem baskısı azaldı.</li>
+            <li>Saha uygulama sırası daha öngörülebilir hale geldi.</li>
+          </ul>
+        </section>
+
+        <section class="detail-section">
+          <h2>Sonuç</h2>
+          <p>Teknik değerlendirme sonucunda terrain uyumlu tasarımın, hem hafriyat hem de mekanik planlama açısından daha sürdürülebilir bir karar çerçevesi sunduğu görülmüştür.</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Teknik Çıkarımlar</h2>
+          <p>Bu çalışma, layout kararının yalnızca enerji üretimi değil, aynı zamanda saha inşaat maliyeti ve süre planı üzerinde de doğrudan etkili olduğunu göstermektedir.</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>İndirilebilir İçerik</h2>
+          <a class="button pressable" href="assets/cases/case-01-hafriyat/downloads/egimli-ve-sert-zeminli-ges-sahalarinda-hafriyat-ve-tasiyici-sistem-optimizasyonu.pdf">PDF Raporu Aç</a>
+        </section>
+      </article>
+
+      <aside class="side-panel">
+        <ul class="side-list">
+          <li><span class="side-label">Kategori</span>Terrain Analysis</li>
+          <li><span class="side-label">Yayın Tarihi</span>YYYY-MM-DD</li>
+          <li><span class="side-label">Araçlar</span>AutoCAD · PVcase · Excel</li>
+          <li><span class="side-label">Meta</span>Cut / Fill · Contour · Layout impact</li>
+          <li><span class="side-label">İndirilebilir</span><a href="assets/cases/case-01-hafriyat/downloads/egimli-ve-sert-zeminli-ges-sahalarinda-hafriyat-ve-tasiyici-sistem-optimizasyonu.pdf">PDF</a></li>
         </ul>
-        <div class="detail-visual">Comparison Image Placeholder</div>
-      </section>
-
-      <section class="detail-section" data-reveal>
-        <h2>6. Result</h2>
-        <p>
-          Çalışma sonunda, proje ekibi için uygulanabilirliği yüksek bir optimize yerleşim önerisi üretildi.
-          Nihai senaryo; hafriyat azaltımı, erişim kolaylığı ve kapasite sürekliliği açısından dengeli bir sonuç
-          sundu. Bu çıktı, erken faz tasarım kararlarının inşaat maliyeti üzerindeki etkisini sayısal olarak
-          görünür hale getirdi.
-        </p>
-      </section>
-
-      <section class="detail-section" data-reveal>
-        <h2>7. Next Related Case Studies</h2>
-        <div class="related-grid">
-          <a class="card pressable" href="case-study-02.html">
-            <span class="case-number">Case 02</span>
-            <h3>String cable comparison in utility scale projects</h3>
-            <p class="muted">Kablolama senaryoları ve voltage drop etkisi.</p>
-          </a>
-          <a class="card pressable" href="case-study-03.html">
-            <span class="case-number">Case 03</span>
-            <h3>PVsyst report interpretation</h3>
-            <p class="muted">Üretim raporlarının teknik risk odaklı okunması.</p>
-          </a>
-        </div>
-        <a class="button pressable" href="case-studies.html">Back to Archive</a>
-      </section>
-    </article>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Mustafa Ünal</p>
       <div class="footer-links">
-        <a href="about.html">About</a>
+        <a href="hakkimda.html">Hakkımda</a>
         <a href="case-studies.html">Case Studies</a>
-        <a href="insights.html">Insights</a>
-        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
+        <a href="teknik-kutuphane.html">Teknik Kütüphane</a>
       </div>
     </div>
   </footer>
