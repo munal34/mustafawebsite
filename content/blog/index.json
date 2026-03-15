@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "egim-esigi-layout-verimi",
+    "title": "Eğim eşiği seçimi layout verimini nasıl etkiler?",
+    "category": "Tasarım",
+    "date": "2026-03-01",
+    "summary": "Eğim sınıf eşiklerinin blok yerleşimi ve hafriyat dengesine etkisi karşılaştırılmıştır.",
+    "file": "content/blog/egim-esigi-layout-verimi.md"
+  },
+  {
+    "slug": "string-route-metraj-disindaki-metrikler",
+    "title": "String route kararında metraj dışında hangi metrikler önemli?",
+    "category": "Elektrik",
+    "date": "2026-02-24",
+    "summary": "Gerilim düşümü, montaj akışı ve bakım erişimi bir arada değerlendirildiğinde daha dengeli karar verilir.",
+    "file": "content/blog/string-route-metraj-disindaki-metrikler.md"
+  },
+  {
+    "slug": "loss-tree-okuma-sirasi",
+    "title": "Loss tree okuma sırası teknik karar kalitesini nasıl artırır?",
+    "category": "Üretim Analizi",
+    "date": "2026-02-15",
+    "summary": "Yüksek etkili kayıp kalemlerinin önceliklendirilmesi revizyon süresini kısaltır.",
+    "file": "content/blog/loss-tree-okuma-sirasi.md"
+  }
+]

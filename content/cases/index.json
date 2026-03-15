@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "string-kablo-karsilastirma",
+    "number": "Case 02",
+    "category": "Electrical Design",
+    "title": "String cable comparison in utility scale projects",
+    "summary": "Farklı kablolama senaryolarının uzunluk, kayıp ve saha uygulanabilirliği açısından değerlendirilmesi.",
+    "meta": "Cable routing · Voltage drop",
+    "cover": "assets/cases/case-02-kablolama/images/cablelenghts.png",
+    "date": "YYYY-MM-DD",
+    "tools": [
+      "PVX.AI",
+      "Excel",
+      "CAD"
+    ],
+    "file": "content/cases/string-kablo-karsilastirma.md",
+    "pdf": "assets/cases/case-02-kablolama/downloads/gunes-enerjisi-santrali-string-kablolama-metodlari-karsilastirma-raporu.pdf",
+    "libraryTitle": "String Kablolama Karşılaştırma Raporu"
+  },
+  {
+    "slug": "pvsyst-rapor-yorumlama",
+    "number": "Case 03",
+    "category": "Production Analysis",
+    "title": "PVsyst report interpretation",
+    "summary": "Enerji üretim raporlarının teknik risk ve tasarım kararları açısından yorumlanması.",
+    "meta": "Loss tree · Yield analysis",
+    "cover": "assets/cases/case-03-golge-kablolama-optimizasyon/images/1-2.png",
+    "date": "YYYY-MM-DD",
+    "tools": [
+      "PVX.AI",
+      "PVsyst",
+      "Excel",
+      "CAD"
+    ],
+    "file": "content/cases/pvsyst-rapor-yorumlama.md",
+    "pdf": "assets/cases/case-03-golge-kablolama-optimizasyon/downloads/gunes-enerjisi-santrali-golgeleme-dc-guc-ve-kablo-metraji-etki-analizi.pdf",
+    "libraryTitle": "Gölgeleme ve Metraj Etki Analizi"
+  },
+  {
+    "slug": "bess-peak-shaving-clipping",
+    "number": "Case 04",
+    "category": "Storage Analysis",
+    "title": "BESS peak shaving ve clipping davranışı",
+    "summary": "Depolama stratejisinin üretim profilinde yarattığı teknik etkileri ele alan karşılaştırmalı çalışma.",
+    "meta": "BESS · Peak shaving · Clipping",
+    "cover": "assets/cases/case-04-depolama-sistemleri/images/tracker.jpg",
+    "date": "YYYY-MM-DD",
+    "tools": [
+      "PVX.AI",
+      "Excel",
+      "Simülasyon Modeli"
+    ],
+    "file": "content/cases/bess-peak-shaving-clipping.md",
+    "pdf": "assets/cases/case-04-depolama-sistemleri/downloads/bess-projelerinde-peakshaving-ve-clipping-davranislarinin-incelenmesi.pdf",
+    "libraryTitle": "BESS Peak Shaving Raporu"
+  },
+  {
+    "slug": "terrain-optimizasyonu-cut-fill-karsilastirma",
+    "number": "Case 05",
+    "category": "Terrain Analysis",
+    "title": "Zorlu Arazilerde Hibrit Güneş + Rüzgar Projesi Tasarımı",
+    "summary": "Büyük ölçekli ve özellikle hibrit güneş + rüzgar projelerinde tasarım süreci yalnızca panel yerleşimi değildir.\n\nTopoğrafya, zemin, drenaj ve altyapı kısıtlarının birlikte değerlendirilmesi, projenin hem teknik uygulanabilirliği hem de finansal sürdürülebilirliği açısından kritik rol oynar.",
+    "meta": "Cut / Fill · Contour · Layout impact",
+    "cover": "assets/uploads/images/1773537797660-image1.jpg",
+    "date": "2026-03-15",
+    "tools": [
+      "AutoCAD",
+      "PVX.AI"
+    ],
+    "file": "content/cases/terrain-optimizasyonu-cut-fill-karsilastirma.md",
+    "pdf": "assets/cases/case-01-hafriyat/downloads/egimli-ve-sert-zeminli-ges-sahalarinda-hafriyat-ve-tasiyici-sistem-optimizasyonu.pdf",
+    "libraryTitle": "Zorlu Arazilerde Hibrit Güneş + Rüzgar Projesi Tasarımı"
+  }
+]
