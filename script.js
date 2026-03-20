@@ -434,6 +434,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const navAliases = {
     "blog-post.html": "blog.html",
     "case-post.html": "case-studies.html",
+    "gonullu-calismalar.html": "hakkimda.html",
     "blog-01.html": "blog.html",
     "blog-02.html": "blog.html",
     "blog-03.html": "blog.html",

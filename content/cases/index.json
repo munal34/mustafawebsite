@@ -70,5 +70,23 @@
     "file": "content/cases/terrain-optimizasyonu-cut-fill-karsilastirma.md",
     "pdf": "assets/cases/case-01-hafriyat/downloads/egimli-ve-sert-zeminli-ges-sahalarinda-hafriyat-ve-tasiyici-sistem-optimizasyonu.pdf",
     "libraryTitle": "Zorlu Arazilerde Hibrit Güneş + Rüzgar Projesi Tasarımı"
+  },
+  {
+    "slug": "kuzey-egimli-arazide-hafriyatin-gercek-etkisi",
+    "number": "Case 06",
+    "category": "Genel",
+    "title": "Kuzey Eğimli Arazide Hafriyatın Gerçek Etkisi",
+    "summary": "",
+    "meta": "",
+    "cover": "assets/uploads/images/1774027720590-1764593401277.png",
+    "date": "2026-03-20",
+    "tools": [
+      "PVX.AI",
+      "PVsyst",
+      "Autocad"
+    ],
+    "file": "content/cases/kuzey-egimli-arazide-hafriyatin-gercek-etkisi.md",
+    "pdf": "",
+    "libraryTitle": "Kuzey Eğimli Arazide Hafriyatın Gerçek Etkisi"
   }
 ]
